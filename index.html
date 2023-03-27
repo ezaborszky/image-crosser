@@ -1,132 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" href="styles.css">
 	<title>Picture Uploader</title>
-	<style>
-		body {
-			background: linear-gradient(to bottom, #0066cc, #0099cc);
-			margin: 0;
-			padding: 0;
-			font-family: Arial, sans-serif;
-			color: #fff;
-		}
-		.container {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			height: 100vh;
-		}
-		.btn {
-			padding: 10px 20px;
-			padding-bottom: 20px;
-			background-color: #af2e2e;
-			color: #333;
-			border-radius: 5px;
-			font-size: 1.2rem;
-			text-transform: uppercase;
-			font-weight: bold;
-			cursor: pointer;
-			border: none;
-			outline: none;
-			margin-top: 10px;
-		}
-		.hidden {
-			display: none;
-		}
-		.img-container {
-			display: flex;
-			justify-content: center;
-			margin-top: 20px;
-		}
-		.img-container img {
-			max-width: 500px;
-			max-height: 500px;
-		}
-
-		#add-picture {
-			padding: 40px;
-			font-size: 20px;
-			font-weight: 900;
-			border-radius: 4%;
-			margin: 4rem;
-			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-		}
-
-		/* The switch - the box around the slider */
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-  margin: 10px;
-}
-
-/* Hide default HTML checkbox */
-.switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-/* The slider */
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #d60a0a;
-  -webkit-transition: .4s;
-  transition: .4s;
-  
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #cf7610;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-
-.label {
-	font-size: 30px;
-}
-	</style>s
+	<script src="app-jpg.js" defer></script>
 </head>
 <body>
+	<div class="pages">
+
   <div class="container">
-    <h1>Image Cross Adder</h1>
-    <button id="add-picture">Add Picture</button>
+	<!-- <h2 id="anchor-0"></h2>
+	<a id="anchor" href="#anchor-1">Jump to side by side image creator ⬇️</a><br /> -->
+	<h1>Image Cross Adder</h1>
+	<img class="tutorial" src="tutorial.jpg">
+   
+   
 
     <label class="switch">
 		<input type="checkbox" id="toggle-color">
@@ -134,8 +22,25 @@ input:checked + .slider:before {
 	  </label>
 
     <label for="toggle-color" class="label">Colour toggle: RED / ORANGE </label>
-    <a id="download-link" download="modified-image.jpg"></a>
+	<button id="add-picture">Add Picture</button>
+	<a id="download-link" download="modified-image.jpg"></a>
   </div>
-  <script src="app-jpg.js"></script>
+ 
+<!-- 
+<div class="container">
+	<h2 id="anchor-1"></h2>
+	<a id="anchor" href="#anchor-0">Jump to side by side image creator ⬆️</a><br />
+	<div class="image-preview">
+	
+	<input class="window" type="file" accept="image/jpeg, image/png, image/jpg">
+<output></output>
+	
+	<input class="window" type="file" accept="image/jpeg, image/png, image/jpg">
+<output></output>
+</div>
+</div> -->
+
+
+</div>	
 </body>
 </html>

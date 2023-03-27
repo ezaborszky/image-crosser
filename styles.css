@@ -1,0 +1,184 @@
+
+
+body {
+    background: linear-gradient(to right, #099cd6, #21eb75a2);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+h1 {
+    font-size: 60px;
+    font-variant: small-caps;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:first baseline;
+    height: 100vh;
+}
+.btn {
+    padding: 10px 20px;
+    padding-bottom: 20px;
+    background-color: #af2e2e;
+    color: #333;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-top: 10px;
+}
+.hidden {
+    display: none;
+}
+.img-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.img-container img {
+    max-width: 500px;
+    max-height: 500px;
+}
+
+#add-picture {
+    
+    background-color: rgba(255,255,255, 0.6);
+    padding: 40px;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 4%;
+    margin: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#add-picture:hover {
+    
+    background-color: rgba(255,255,255, 0.8);
+    padding: 40px;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 4%;
+    margin: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* The switch - the box around the slider */
+.switch {
+position: relative;
+display: inline-block;
+width: 60px;
+height: 34px;
+margin: 10px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+/* The slider */
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #d60a0a;
+-webkit-transition: .4s;
+transition: .4s;
+
+}
+
+.slider:before {
+position: absolute;
+content: "";
+height: 26px;
+width: 26px;
+left: 4px;
+bottom: 4px;
+background-color: white;
+-webkit-transition: .4s;
+transition: .4s;
+}
+
+input:checked + .slider {
+background-color: #cf7610;
+}
+
+input:focus + .slider {
+box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+-webkit-transform: translateX(26px);
+-ms-transform: translateX(26px);
+transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+border-radius: 34px;
+}
+
+.slider.round:before {
+border-radius: 50%;
+}
+
+.label {
+font-size: 30px;
+}
+
+.tutorial {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 600px;
+    opacity: 90%;
+}
+
+#anchor {
+    color: #2196F3;
+    font-size: x-large;
+    text-decoration: none;
+    border: #2196F3;
+    margin: 20px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.image-preview {
+    display: flex;
+    flex-direction: row;
+    min-width: 50vh;
+    max-width: 100vh;
+    border: solid wheat;
+}
+
+.window {
+    display: flex;
+    padding: 5px;
+    width: 600px;
+    height: 700px;
+    border: solid wheat;
+    background-color: #3333336e;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+}
+
+input {
+    display: flex;
+    padding: 50px;
+    text-align: center;
+}
