@@ -1,2 +1,2 @@
 # image-crosser
-Adds crosses to images
+Parts of this app were created using GPT-4 Adds crosses to images
