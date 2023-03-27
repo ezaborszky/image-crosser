@@ -2,7 +2,7 @@ const addPictureButton = document.getElementById("add-picture");
 const downloadLink = document.getElementById("download-link");
 const toggleColor = document.getElementById("toggle-color");
 const uploadPictureFirst = document.getElementById("first");
-console.log(uploadPictureFirst);
+
 let crossColor = "red";
 
 toggleColor.addEventListener("change", function () {
