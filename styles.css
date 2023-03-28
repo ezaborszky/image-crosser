@@ -192,21 +192,10 @@ html{
     border: solid wheat;
 }
 
-.window {
-    display: flex;
-    padding: 5px;
-    width: 600px;
-    height: 700px;
-    border: solid wheat;
-    background-color: #3333336e;
-    align-items: center;
-    justify-content: center;
-    font-size: x-large;
-}
-
-input {
-    display: flex;
-    padding: 50px;
-    text-align: center;
-    
+a {
+    margin: 10px;
+    text-decoration: solid;
+    font-size: 40px ;
+    font-weight: 400;
+    color: rgb(253, 253, 253);
 }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Merger</title>
+    <style>
+        
+    body {
+        background: linear-gradient(to bottom, #00bfff, #00ff7f);
+    }
+
+    button {
+      height: 60px;
+      border-radius: 3px;
+      border-radius: 5%;
+      background-color: beige;
+      font-size: larger;
+    }
+    
+    a {
+        margin: 10px;
+        text-decoration: solid;
+        font-size: 40px ;
+        font-weight: 400;
+        color: rgb(253, 253, 253);
+    }
+      #wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        padding: 5px;
+      }
+      #container {
+        justify-content: space-evenly;
+        justify-items:center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px dotted black;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      #result {
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+  
+    <div id="wrapper">
+      <a href="index.html">Change to Image Cross Adder</a>
+      <div id="container">
+       
+        <input type="file" id="image1" accept="image/*">
+        <input type="file" id="image2" accept="image/*">
+        <button id="merge">Merge Images</button>
+        <a href="#" id="download" download>Download Image</a>
+      </div>
+      <canvas id="result" width="640" height="480"></canvas>
+    </div>
+    <script src="script2.js"></script>
+  </body>
+</html>

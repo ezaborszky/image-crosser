@@ -2,7 +2,15 @@ const addPictureButton = document.getElementById("add-picture");
 const downloadLink = document.getElementById("download-link");
 const toggleColor = document.getElementById("toggle-color");
 const uploadPictureFirst = document.getElementById("first");
-
+let queuedImagesArray = [],
+	savedForm = document.querySelector("#saved-form"),
+	queuedForm = document.querySelector("#queued-form"),
+	savedDiv = document.querySelector(".saved-div"),
+	queuedDiv = document.querySelector(".queued-div"),
+	inputDiv = document.querySelector(".input-div"),
+	input = document.querySelector(".input-div input"),
+	serverMessage = document.querySelector(".server-message"),
+	deleteImages = [];
 let crossColor = "red";
 
 toggleColor.addEventListener("change", function () {
@@ -49,6 +57,12 @@ function addCross(img, color) {
   return canvas.toDataURL("image/jpeg");
 }
 
-uploadPictureFirst.addEventListener("click", function(){
-  console.log("asd")
-})
+input.addEventListener("change", () => {
+  const files = input.files
+  for(let i = 0; i < files.length; i++) {
+    queuedImagesArray.push(files[i])
+  }
+  queuedForm.reset()
+  displayQueuedImages()
+});
+
