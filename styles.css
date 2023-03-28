@@ -194,8 +194,8 @@ html{
 
 a {
     margin: 10px;
-    text-decoration: solid;
-    font-size: 40px ;
+    text-decoration:underline;
+    font-size: 25px ;
     font-weight: 400;
-    color: rgb(253, 253, 253);
+    color: rgb(249, 251, 252);
 }

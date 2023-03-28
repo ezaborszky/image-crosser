@@ -1,13 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Image Merger</title>
+    <title>Image Merger  </title>
     <style>
-        
+     #result {
+  max-width: 65vw; /* Set a maximum width for the canvas */
+}   
     body {
         background: linear-gradient(to bottom, #00bfff, #00ff7f);
     }
 
+    p{
+      font-size:xx-large;
+      font-weight: 600;
+      color: azure;
+    }
     button {
       height: 60px;
       border-radius: 3px;
@@ -17,12 +24,12 @@
     }
     
     a {
-        margin: 10px;
-        text-decoration: solid;
-        font-size: 40px ;
-        font-weight: 400;
-        color: rgb(253, 253, 253);
-    }
+    margin: 10px;
+    text-decoration:underline;
+    font-size: 25px ;
+    font-weight: 400;
+    color: rgb(249, 251, 252);
+}
       #wrapper {
         display: flex;
         justify-content: space-evenly;
@@ -49,7 +56,8 @@
   <body>
   
     <div id="wrapper">
-      <a href="index.html">Change to Image Cross Adder</a>
+      <a href="index.html">🖼️❌ Back to Image Cross Adder ⬅️</a>
+      <p>Add two images to merge. Images will be resized to match height. Use "Download Image" to get JPG!</p>
       <div id="container">
        
         <input type="file" id="image1" accept="image/*">
