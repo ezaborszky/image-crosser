@@ -24,7 +24,7 @@ function mergeImages() {
       // Draw the right border
       resultCtx.fillStyle = 'white';
       resultCtx.fillRect(width - 3, 0, 3, height);
-      downloadLink.href = resultCanvas.toDataURL('image/jpeg');
+      downloadLink.href = resultCanvas.toDataURL('image/jpg');
       downloadLink.style.display = 'block';
     };
     img2.src = URL.createObjectURL(image2.files[0]);
